@@ -1,7 +1,6 @@
 package com.abhishek.thapa.learning_spring.data;
 
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import static jakarta.persistence.GenerationType.AUTO;
 
@@ -12,6 +11,7 @@ public class Room {
     @GeneratedValue(strategy = AUTO)
     @Column( name = "ROOM_ID")
     private long id;
+
     @Column( name = "NAME")
     private String name;
     @Column( name = "ROOM_NUMBER")

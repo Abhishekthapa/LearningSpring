@@ -19,3 +19,6 @@
  * Adjust application.properties to set logging to debug so that we cna review log and set hibernate auto schema to none. Doing so, we can create our own schema and database via data and schema.sql.
  * Created Spring data repo by definining entity class **Room** and an interface **RoomRepository** that extends **CrudRepository**
  * Mapped the entity to the database table and demonstrated repository method for database interactions.
+ * Created more entities (Reservation and Guest). Added interfaces to it for CRUD operation.
+ * Created a method in reservation repo interface to extract reservation with reservation date = provided date. 
+ * Understood IoC in detail.
