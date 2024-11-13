@@ -22,3 +22,8 @@
  * Created more entities (Reservation and Guest). Added interfaces to it for CRUD operation.
  * Created a method in reservation repo interface to extract reservation with reservation date = provided date. 
  * Understood IoC in detail.
+
+# Day 3: IoC, Dependency Injection, and Service Abstraction
+
+* Created a @Service component which generates room reservation based on date provided.
+* Injected various beans via constructor instead of directly autoWiring it.
