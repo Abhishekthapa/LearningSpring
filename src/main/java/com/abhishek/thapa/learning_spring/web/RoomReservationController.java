@@ -1,4 +1,4 @@
-package web;
+package com.abhishek.thapa.learning_spring.web;
 
 import java.util.Date;
 import java.util.List;
