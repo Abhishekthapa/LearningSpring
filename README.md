@@ -27,3 +27,10 @@
 
 * Created a @Service component which generates room reservation based on date provided.
 * Injected various beans via constructor instead of directly autoWiring it.
+
+# Day 4: MVC Pattern, Spring Controller
+
+* Controller handles web requests, view the model and assemble the data for the model using various business logic.
+* Spring controller is a spring bean which has web request handling methods.
+* When returning a string from a controller, this string is the name of template file without extension which thymeleaf will use to generate HTML. Eg: roomres is returned so thymeleaf will search for roomres.html file to render the view.
+* 
