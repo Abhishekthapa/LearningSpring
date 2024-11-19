@@ -36,3 +36,9 @@
 * When returning a string from a controller, this string is the name of template file without extension which thymeleaf will use to generate HTML. Eg: roomres is returned so thymeleaf will search for roomres.html file to render the view.
 * roomres should be in src/main/resources/templates.
 * Created new controller for displaying all the guest. Created template called guest as well to display the Controller business logic output.
+
+# Day 5: Spring Webservices
+
+* Removed guest data repo from Controller. Added a service to pull guest list which is then used by guestController. The guestController then pass it to model which is used by thymeleaf to display in UI.
+* Controller returns HTTP View whereas RestController return JSON object.
+* Created a GET and POST method using restController.

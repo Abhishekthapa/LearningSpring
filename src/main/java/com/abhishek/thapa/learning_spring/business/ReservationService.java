@@ -100,5 +100,18 @@ public class ReservationService {
         });
         return guests;
     }
+
+    public List<Room> getHotelRooms() {
+        List<Room> rooms = this.roomRepository.findAll();
+        rooms.sort(Comparator.comparing(Room::getRoomNumber));
+        return rooms;
+    }
+
+    public void addGuest(Guest guest) {
+        if (null == guest) {
+            throw new RuntimeException("Guest cannot be null");
+        }
+        this.guestRepository.save(guest);
+    }
 }
 
