@@ -9,14 +9,14 @@ import static jakarta.persistence.GenerationType.AUTO;
 public class Room {
     @Id
     @GeneratedValue(strategy = AUTO)
-    @Column( name = "ROOM_ID")
+    @Column(name = "ROOM_ID")
     private long id;
 
-    @Column( name = "NAME")
+    @Column(name = "NAME")
     private String name;
-    @Column( name = "ROOM_NUMBER")
+    @Column(name = "ROOM_NUMBER")
     private String roomNumber;
-    @Column( name = "BED_INFO")
+    @Column(name = "BED_INFO")
     private String bedInfo;
 
     public long getId() {

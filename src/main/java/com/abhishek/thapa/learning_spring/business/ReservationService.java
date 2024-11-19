@@ -89,5 +89,16 @@ public class ReservationService {
         });
         return roomReservations;
     }
+
+    public List<Guest> getHotelGuests() {
+        List<Guest> guests = this.guestRepository.findAll();
+        guests.sort((o1, o2) -> {
+            if (o1.getLastName().equals(o2.getLastName())) {
+                return o1.getFirstName().compareTo(o2.getFirstName());
+            }
+            return o1.getLastName().compareTo(o2.getLastName());
+        });
+        return guests;
+    }
 }
 
