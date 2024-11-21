@@ -90,6 +90,7 @@ public class ReservationService {
         return roomReservations;
     }
 
+    // pulls all the guest and sorts guests using last name
     public List<Guest> getHotelGuests() {
         List<Guest> guests = this.guestRepository.findAll();
         guests.sort((o1, o2) -> {
@@ -101,12 +102,15 @@ public class ReservationService {
         return guests;
     }
 
+    //gets all the rooms and sorts the room using room name
     public List<Room> getHotelRooms() {
         List<Room> rooms = this.roomRepository.findAll();
         rooms.sort(Comparator.comparing(Room::getRoomNumber));
         return rooms;
     }
 
+    // method to add guest in guest DB. Since we are using embedded DB once the application is restarted the added
+    // DB won't show because we are loading our data from resources/data.sql
     public void addGuest(Guest guest) {
         if (null == guest) {
             throw new RuntimeException("Guest cannot be null");

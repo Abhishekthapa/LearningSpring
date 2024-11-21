@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+/*
+Controller that pulls in guest information and pass it to HTTP attribute which in used in guest.html for displaying
+ */
 @Controller
 @RequestMapping("/guests")
 public class GuestController {
