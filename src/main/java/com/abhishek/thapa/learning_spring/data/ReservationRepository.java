@@ -7,5 +7,5 @@ import java.sql.Date;
 
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation, Long> {
-    Iterable<Reservation> findReservationByResDate(Date date);
+    Iterable<Reservation> findReservationByResDate(Date date); // function that will get reservation Entity if Date= argument passed date
 }
